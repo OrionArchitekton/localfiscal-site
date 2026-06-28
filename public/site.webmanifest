@@ -1,0 +1,20 @@
+{
+  "name": "localfiscal",
+  "short_name": "localfiscal",
+  "start_url": "/works/localfiscal/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/works/localfiscal/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/works/localfiscal/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

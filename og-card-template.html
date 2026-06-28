@@ -1,0 +1,74 @@
+<!doctype html>
+<!--
+  launch-oss og-card template (1200x630). Fill the {{PLACEHOLDERS}}, serve over
+  python3 -m http.server, screenshot via the Playwright MCP at CSS scale.
+  Placeholders:
+    localfiscal   tool name with an accent span, e.g.  schema<span class="accent">fit</span>
+    localfiscal ingest receipt.jpg      terminal prompt cmd,  e.g.  schemafit lint --ci
+    Local-first private receipt + invoice + ledger intelligence     one-line tagline (grounded in the repo)
+    Receipt chaos &amp; SaaS lock-in      qualitative "before" label (red),  e.g.  400 in prod
+    Private local control       qualitative "after" label (green),  e.g.  caught in CI
+    MIT · Local sqlite · Docker one-command credibility line (lead bold = the first clause)
+    danmercede.com/works/localfiscal         danmercede.com/works/<slug>
+  Keep all claims QUALITATIVE — no unverified numbers/benchmarks.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1200px; height:630px; overflow:hidden; }
+  body {
+    width:1200px; height:630px;
+    background:
+      radial-gradient(1100px 500px at 78% -10%, rgba(230,130,73,0.16), transparent 60%),
+      linear-gradient(160deg, #020B29 0%, #07143A 55%, #020B29 100%);
+    color:#f9fafb; font-family:'Inter',sans-serif; padding:74px 80px;
+    display:flex; flex-direction:column; justify-content:space-between; position:relative;
+  }
+  .top { display:flex; align-items:center; gap:14px; }
+  .dot { width:13px; height:13px; border-radius:50%; }
+  .prompt { font-family:'JetBrains Mono',monospace; font-weight:500; font-size:23px; color:#9fb0c9; margin-left:8px; }
+  .prompt .cmd { color:#E68249; }
+  h1 { font-family:'JetBrains Mono',monospace; font-weight:700; font-size:78px; letter-spacing:-2px; line-height:1.0; margin-top:30px; color:#fff; }
+  h1 .accent { color:#E68249; }
+  .tagline { font-size:35px; font-weight:500; line-height:1.32; color:#cbd5e1; margin-top:26px; max-width:1000px; }
+  .bars { margin-top:34px; display:flex; flex-direction:column; gap:13px; max-width:880px; }
+  .barrow { display:flex; align-items:center; gap:18px; }
+  .barlabel { font-family:'JetBrains Mono',monospace; font-size:18px; color:#94a3b8; width:74px; }
+  .track { flex:1; height:18px; border-radius:9px; background:#1b3566; overflow:hidden; }
+  .fill { display:block; height:100%; border-radius:9px; }
+  .fill.before { width:100%; background:linear-gradient(90deg,#f87171,#ef4444); }
+  .fill.after { width:11%; background:linear-gradient(90deg,#34d399,#10b981); }
+  .barnum { font-family:'JetBrains Mono',monospace; font-size:18px; width:252px; text-align:right; white-space:nowrap; }
+  .barnum.r { color:#fca5a5; } .barnum.g { color:#6ee7b7; }
+  .foot { display:flex; align-items:center; justify-content:space-between; }
+  .cred { font-size:23px; font-weight:500; color:#94a3b8; }
+  .cred b { color:#E68249; font-weight:600; }
+  .url { font-family:'JetBrains Mono',monospace; font-size:21px; color:#64748b; }
+</style>
+</head>
+<body>
+  <div>
+    <div class="top">
+      <span class="dot" style="background:#ef4444"></span>
+      <span class="dot" style="background:#f59e0b"></span>
+      <span class="dot" style="background:#10b981"></span>
+      <span class="prompt">$ <span class="cmd">localfiscal ingest receipt.jpg</span></span>
+    </div>
+    <h1>localfiscal</h1>
+    <div class="tagline">Local-first private receipt + invoice + ledger intelligence</div>
+    <div class="bars">
+      <div class="barrow"><span class="barlabel">before</span><span class="track"><span class="fill before"></span></span><span class="barnum r">Receipt chaos &amp; SaaS lock-in ✗</span></div>
+      <div class="barrow"><span class="barlabel">after</span><span class="track"><span class="fill after"></span></span><span class="barnum g">Private local control ✓</span></div>
+    </div>
+  </div>
+  <div class="foot">
+    <div class="cred"><b>MIT · Local sqlite · Docker one-command</b></div>
+    <div class="url">danmercede.com/works/localfiscal</div>
+  </div>
+</body>
+</html>
