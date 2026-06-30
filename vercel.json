@@ -5,10 +5,10 @@
       "has": [
         {
           "type": "host",
-          "value": "mcp-context-budget.danmercede.com"
+          "value": "localfiscal.danmercede.com"
         }
       ],
-      "destination": "https://www.danmercede.com/works/mcp-context-budget/$1",
+      "destination": "https://www.danmercede.com/works/localfiscal/$1",
       "permanent": true
     }
   ],
