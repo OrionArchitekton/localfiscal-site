@@ -12,7 +12,7 @@ Recorded local output from v0.2.0. Synthetic data, edited replay; no external pr
 ### SHOT report
 - target: terminal
 - url: index.html?scene=report
-- narration: The generated report keeps the currencies separate and represents the amounts as integer minor units. The displayed totals come from those two fictional entries.
+- narration: The generated report keeps the currencies separate and represents the amounts as integer minor units. This small example is a local bookkeeping demonstration, not financial or tax advice.
 - action: goto url="index.html?scene=report"
 - action: wait ms=400
 
