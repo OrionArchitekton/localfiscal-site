@@ -1,0 +1,14 @@
+{
+  "slug": "localfiscal",
+  "demonstrated_version": "v0.2.0",
+  "source_commit": "96f8666d813efb419c935f13d1c9937e35b31a99",
+  "source_sha256": "c5138b7367a5daf078ff6e79f645848489bdf9b9c064d41554202dbc534fd1a7",
+  "source_name": "agent-demo-video final.mp4",
+  "duration_seconds": 32.633333,
+  "voice": "Locally synthesized Dan narration using the existing authorized voice command",
+  "files": {
+    "localfiscal-demo.jpg": "39cecf12bdcaa9d094227bf8da2ac92f6de142c15fd9bf78d5b749db819fe63d",
+    "localfiscal-demo.mp4": "ae5d94a6c2f4ca0a364d7819f710ff0de3ac5eb6cdfd87ecf84f7d09fcaa7b3a",
+    "localfiscal-demo.vtt": "86ba4e97d4b3ff0d17dea282d0bfc989d867041567fd3de83509cb43059fa47f"
+  }
+}

@@ -1,0 +1,13 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:11.220
+Localfiscal keeps a receipt and transaction ledger on your own machine. In a fresh scratch database, I add fictional client income and an office expense. No bank account or cloud service is involved.
+
+2
+00:00:11.533 --> 00:00:21.233
+The generated report keeps the currencies separate and represents the amounts as integer minor units. This small example is a local bookkeeping demonstration, not financial or tax advice.
+
+3
+00:00:21.700 --> 00:00:32.280
+Then export the same two transactions as CSV. This records and reports what I supplied; it does not reconcile a bank account. The source and local setup are linked below.

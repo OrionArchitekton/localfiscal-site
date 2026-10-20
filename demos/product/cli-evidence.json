@@ -1,0 +1,58 @@
+{
+  "scope": "Recorded synthetic local demonstration; no API/model call or production mutation",
+  "commands": [
+    {
+      "command": [
+        "localfiscal",
+        "add",
+        "2026-10-19",
+        "Example Client",
+        "1200.00",
+        "--income"
+      ],
+      "exit": 0,
+      "stdout": "ADDED: 1 | $1,200.00 | income\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "localfiscal",
+        "add",
+        "2026-10-19",
+        "Example Supplies",
+        "18.49",
+        "--category",
+        "office"
+      ],
+      "exit": 0,
+      "stdout": "ADDED: 2 | $18.49 | expense\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "localfiscal",
+        "report",
+        "--fmt",
+        "json"
+      ],
+      "exit": 0,
+      "stdout": "REPORT: data/report-current.json\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "localfiscal",
+        "export",
+        "--fmt",
+        "csv"
+      ],
+      "exit": 0,
+      "stdout": "EXPORT: data/export.csv\n",
+      "stderr": ""
+    }
+  ],
+  "generated_files": {
+    "report-current.json": "{\n  \"period\": \"current\",\n  \"count\": 2,\n  \"currencies\": {\n    \"USD\": {\n      \"income_minor\": 120000,\n      \"expense_minor\": 1849,\n      \"net_minor\": 118151,\n      \"income\": \"$1,200.00\",\n      \"expense\": \"$18.49\",\n      \"net\": \"$1,181.51\",\n      \"by_category\": {\n        \"general\": {\n          \"minor\": 120000,\n          \"display\": \"$1,200.00\"\n        },\n        \"office\": {\n          \"minor\": -1849,\n          \"display\": \"-$18.49\"\n        }\n      }\n    }\n  }\n}",
+    "export.csv": "id,date,vendor,amount_minor,amount,currency,category,kind,source\n2,2026-10-19,Example Supplies,1849,18.49,USD,office,expense,\n1,2026-10-19,Example Client,120000,1200.00,USD,general,income,"
+  }
+}
