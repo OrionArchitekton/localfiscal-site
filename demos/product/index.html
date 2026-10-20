@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>localfiscal recorded demo</title><style>*{box-sizing:border-box}body{margin:0;width:1920px;height:1080px;background:#0b1721;color:#f5f5f0;font-family:Arial,sans-serif;padding:70px 100px}header{display:flex;justify-content:space-between;font:18px monospace;color:#b6c1c5;letter-spacing:2px}header strong,.eyebrow{color:#e8a96a}section{display:none;margin-top:58px}.eyebrow{font:18px monospace;letter-spacing:3px}h1{font-size:62px;margin:20px 0 16px;letter-spacing:-1.5px}.intro{font-size:27px;color:#c6d1d6;margin:0 0 24px}pre{background:#14242f;border:1px solid #344854;border-radius:12px;padding:24px 30px;font:29px/1.3 "DejaVu Sans Mono",monospace;white-space:pre-wrap;color:#a5e1cb;max-height:550px;overflow:hidden}footer{position:absolute;left:100px;right:100px;bottom:125px;font:18px/1.6 monospace;color:#adbdc5;border-top:1px solid #344854;padding-top:16px}</style><header><strong>DM / DAN MERCEDE</strong><span>OPEN SOURCE / v0.2.0 / MIT</span></header><section id="add"><p class="eyebrow">01 / LOCALFISCAL</p><h1>Keep a small ledger local.</h1><p class="intro">Fictional amounts in a fresh scratch database.</p><pre>$ localfiscal add 2026-10-19 &quot;Example Client&quot; 1200.00 --income
+ADDED: 1 | $1,200.00 | income
+
+$ localfiscal add 2026-10-19 &quot;Example Supplies&quot; 18.49 --category office
+ADDED: 2 | $18.49 | expense</pre></section><section id="report"><p class="eyebrow">02 / LOCALFISCAL</p><h1>Read the generated report.</h1><p class="intro">The real report file, with integer minor units.</p><pre>$ localfiscal report --fmt json
+
+USD report excerpt
+{
+  &quot;income_minor&quot;: 120000,
+  &quot;expense_minor&quot;: 1849,
+  &quot;net_minor&quot;: 118151,
+  &quot;income&quot;: &quot;$1,200.00&quot;,
+  &quot;expense&quot;: &quot;$18.49&quot;,
+  &quot;net&quot;: &quot;$1,181.51&quot;
+}</pre></section><section id="export"><p class="eyebrow">03 / LOCALFISCAL</p><h1>Export the same transactions.</h1><p class="intro">CSV for your next accounting step.</p><pre>$ localfiscal export --fmt csv
+
+id,date,vendor,amount_minor,amount,currency,category,kind,source
+2,2026-10-19,Example Supplies,1849,18.49,USD,office,expense,
+1,2026-10-19,Example Client,120000,1200.00,USD,general,income,</pre></section><footer>RECORDED LOCAL EVIDENCE / SYNTHETIC INPUT / EDITED REPLAY<br>danmercede.com/works/localfiscal/</footer><script>const scene=new URLSearchParams(location.search).get("scene")||"add";(document.getElementById(scene)||document.querySelector("section")).style.display="block";</script></html>

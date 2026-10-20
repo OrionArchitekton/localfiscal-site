@@ -1,0 +1,70 @@
+{
+  "source": "Existing per-shot word alignment from this exact recording; original narration retained. Numeric spelling uses the same observed spoken interval.",
+  "cues": [
+    {
+      "start": 0.0,
+      "end": 2.82,
+      "text": "Localfiscal keeps a receipt and transaction ledger on"
+    },
+    {
+      "start": 2.82,
+      "end": 5.44,
+      "text": "your own machine. In a fresh scratch database,"
+    },
+    {
+      "start": 5.82,
+      "end": 7.82,
+      "text": "I add fictional client income and an office"
+    },
+    {
+      "start": 7.82,
+      "end": 10.86,
+      "text": "expense. No bank account or cloud service is"
+    },
+    {
+      "start": 10.86,
+      "end": 11.22,
+      "text": "involved."
+    },
+    {
+      "start": 11.533333,
+      "end": 13.853333000000001,
+      "text": "The generated report keeps the currencies separate and"
+    },
+    {
+      "start": 13.853333000000001,
+      "end": 16.013333000000003,
+      "text": "represents the amounts as integer minor units."
+    },
+    {
+      "start": 16.753333,
+      "end": 19.253333,
+      "text": "This small example is a local bookkeeping demonstration,"
+    },
+    {
+      "start": 19.593333,
+      "end": 21.233333000000002,
+      "text": "not financial or tax advice."
+    },
+    {
+      "start": 21.700000000000003,
+      "end": 24.620000000000005,
+      "text": "Then export the same two transactions as CSV."
+    },
+    {
+      "start": 25.440000000000005,
+      "end": 27.380000000000003,
+      "text": "This records and reports what I supplied;"
+    },
+    {
+      "start": 27.92,
+      "end": 29.660000000000004,
+      "text": "it does not reconcile a bank account."
+    },
+    {
+      "start": 30.240000000000002,
+      "end": 32.28,
+      "text": "The source and local setup are linked below."
+    }
+  ]
+}
